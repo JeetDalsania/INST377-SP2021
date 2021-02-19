@@ -2,35 +2,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeet Dalsania</title>
+    <title>Jeet Dalsania Lab 4</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <h1>Jeet Dalsania's Lab 4</h1>
-    <form action="/api" method="POST">
+    <form action="/api" method="post">
       <ul class="flex-outer">
         <li>
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" />
+          <label for="fname">First Name</label>
+          <input name="undefined" type="text" id="fname" />
         </li>
         <li>
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" />
+          <label for="lname">Last Name</label>
+          <input name="undefined" type="text" id="lname" />
         </li>
         <li>
           <label for="email">Email</label>
-          <input type="email" id="email" />
+          <input name="undefined" type="email" id="email" />
         </li>
         <li>
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" />
+          <input name="undefined" type="tel" id="phone" />
         </li>
         <li>
-          <label for="text-field">Text Field</label>
+          <label for="messages">Messages</label>
           <textarea
-            rows="15"
-            id="text-field"
+            name="message"
+            rows="5"
+            cols= "33"
+            id="messages"
             placeholder="This is some default message text."
           ></textarea>
         </li>
@@ -38,21 +40,21 @@
           <p>Age</p>
           <ul class="flex-inner">
             <li>
-              <input type="checkbox" id="eighteen-to-thirtyfive" />
+              <input name="undefined" type="checkbox" id="eighteen-to-thirtyfive" />
               <label for="eighteen-to-thirtyfive">18-35</label>
             </li>
             <li>
-              <input type="checkbox" id="thirtyfive-to-fifty" />
+              <input name="undefined" type="checkbox" id="thirtyfive-to-fifty" />
               <label for="thirtyfive-to-fifty">35-50</label>
             </li>
             <li>
-              <input type="checkbox" id="fifty-to-sixtyfive" />
+              <input name="undefined" type="checkbox" id="fifty-to-sixtyfive" />
               <label for="fifty-to-sixtyfive">50-65</label>
             </li>
           </ul>
         </li>
         <li>
-          <button type="submit">Submit Form</button>
+          <button name="undefined" type="submit" id="undefined" >Submit Form</button>
         </li>
       </ul>
     </form>
