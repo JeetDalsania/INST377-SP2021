@@ -1,0 +1,53 @@
+body {
+  background: #96f08a;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 0 0 25px;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 120px;
+  max-width: 15%;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 120px;
+  max-width: 55%;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer li button {
+  padding: 5px 10px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 5px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.flex-inner {
+  padding: 25px 10px;
+  justify-content: space-between;
+}
+
+.flex-outer > li:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 20px;
+}
+.flex-outer > li:nth-child(4) {
+  margin-bottom: 10px;
+}
