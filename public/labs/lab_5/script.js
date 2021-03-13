@@ -6,11 +6,6 @@ function mapInit() {
 async function dataHandler(mapObjectFromFunction) {
   // use your assignment 1 data handling code here
   // and target mapObjectFromFunction to attach markers
-}
-
-async function windowActions() {
-  const map = mapInit();
-  await dataHandler(map);
   
   const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
   const request = await fetch(endpoint)
@@ -46,6 +41,10 @@ async function windowActions() {
   const suggestions = document.querySelector('.suggestions')
   searchInput.addEventListener('change', displayMatches);
   searchInput.addEventListener('keyup', (evt) => {displayMatches(evt)});
+}
 
+async function windowActions() {
+  const map = mapInit();
+  await dataHandler(map);
 }
 window.onload = windowActions;
